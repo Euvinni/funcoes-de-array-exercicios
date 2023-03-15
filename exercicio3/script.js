@@ -11,3 +11,16 @@ const produtos = [
     { nome: "Sabão em Pó", categoria: "Limpeza", preco: 10.80 }
  ]
  
+
+const itensDeLimpeza = produtos.filter((item, indice, arrayOriginal) => {
+    return item.categoria === `Limpeza`
+})
+
+console.log(itensDeLimpeza);
+
+
+const nomeDosItens = itensDeLimpeza.map((item) => {
+    return item.nome
+})
+
+console.log(nomeDosItens);
